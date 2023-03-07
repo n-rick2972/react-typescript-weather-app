@@ -27,7 +27,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=670dab98121147758d122549232801&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=670dab98121147758d122549232801&q=${city}&aqi=no`
     )
       .then((res) => res.json())
       .then((data) => {
